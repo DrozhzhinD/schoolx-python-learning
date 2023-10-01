@@ -1,0 +1,13 @@
+def root(num: int) -> int:
+    ans = 0
+    for i in range(num//2+1):
+        if i*i == num:
+            ans = i
+    if not (ans == 0):
+        return ans
+    else:
+        return "не могу"
+
+number = int(input("Введите число: "))
+root = root(number)
+print(root)
